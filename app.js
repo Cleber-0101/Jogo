@@ -10,8 +10,8 @@ function exibirTextoNaTela(tag, texto) {
    {rate:2.1});
 }
 
-exibirTextoNaTela('h1' , 'Seja bem vindo meu cria');
-exibirTextoNaTela('p' , 'Escolha um número entre 1 e 10 , é impossivel você me vencer , seu fraco');
+exibirTextoNaTela('h1' , 'Seja bem vindo');
+exibirTextoNaTela('p' , 'Escolha um número entre 1 e 10');
 
 function verificaChute() {
    let chute = document.querySelector('input').value;
@@ -24,9 +24,9 @@ function verificaChute() {
         document.getElementById('reiniciar').removeAttribute('disabled');
    } else {
       if (chute > numeroSecreto) {
-         exibirTextoNaTela('p', 'O número secreto é menor seu burrão kkkkkk');
+         exibirTextoNaTela('p', 'O número secreto é menor ');
       } else {
-         exibirTextoNaTela('p' , 'O número é maior , seu Burrão kkkkk');
+         exibirTextoNaTela('p' , 'O número é maior ');
       }
       tentativas++;
       limparCaixaDeNumero(); 
